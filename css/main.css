@@ -1,0 +1,139 @@
+:root {
+    --accent-yellow: hsl(36, 100%, 73%);
+    --main-bg: hsl(204, 100%, 14%);
+    --accent-blue: hsl(204, 100%, 18%);
+    --radio-borde: 6px;
+    --smooth-yellow: hsl(36, 100%, 83%);
+}
+
+body {
+    background-color: var(--main-bg);
+    margin: 0;
+    padding: 0;
+}
+
+/*.col-lg, .col-sm-4 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}*/
+
+#video, #msj {
+    border: var(--radio-borde) solid rgb(255, 255, 255);
+    block-size: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: static;
+}
+
+.card-header h2, .navbar-logo {
+    font-family: "Noto Sans Chakma", Arial, Helvetica, sans-serif, helvetica;
+    font-weight: 500;
+    font-size: 22px;
+    border-bottom: var(--radio-borde) solid red;
+}
+
+p, button, .offcanvas-body {    
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  
+}
+
+p, .offcanvas-body, .card-header h2, .navbar-logo, .config, .btn-close {
+    color: var(--accent-yellow);
+    
+}
+
+.config {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    position: absolute;
+    stroke: currentColor;
+    stroke-width: 0.8;
+    transition: all 0.18s ease-in-out;
+}
+
+.config:hover {
+    color:var(--main-bg);
+    background-color: var(--accent-yellow);
+    border-radius:  50%;
+}
+
+#configuracion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.offcanvas-background {
+    background: var(--main-bg);
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.offcanvas-header {
+    justify-content: center;
+    position: relative;
+    padding: 4px;
+}
+
+.navbar-logo:hover {
+    color: var(--smooth-yellow);
+}
+
+
+
+.offcanvas-body {
+    background-color: var(--accent-blue);
+    padding-left: 0;
+    padding-right: 0;
+    margin: 2vh;
+    border-radius: var(--radio-borde);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.btn-cont {
+    padding: 4px;
+    margin: 10px;
+    margin-left: 0;
+    transition: all 0.18s ease-in-out;
+    color:var(--accent-blue);
+    background-color: var(--accent-yellow);
+    border-radius: 0 var(--radio-borde) var(--radio-borde) 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 92%;
+}
+
+.btn-cont:hover {
+    color:var(--accent-yellow);
+    background-color: var(--main-bg);
+    border-color: var(--accent-yellow);
+    border-left: none;
+}
+
+.foo {
+    justify-content: center;
+}
+
+footer {
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 0.8px;
+}
+
+#footer-app-name, #footer-app-creator {
+    color: #ffffff62;
+}
