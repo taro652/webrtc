@@ -28,7 +28,7 @@ body {
     position: static;
 }
 
-.card-header h2, .navbar-logo {
+.card-header h2 {
     font-family: "Noto Sans Chakma", Arial, Helvetica, sans-serif, helvetica;
     font-weight: 500;
     font-size: 22px;
@@ -42,7 +42,7 @@ p, button, .offcanvas-body {
   
 }
 
-p, .offcanvas-body, .card-header h2, .navbar-logo, .config, .btn-close {
+p, .offcanvas-body, .card-header h2, .navbar-logo, .nombre, .config, .btn-close {
     color: var(--accent-yellow);
     
 }
@@ -80,22 +80,36 @@ p, .offcanvas-body, .card-header h2, .navbar-logo, .config, .btn-close {
 }
 
 .offcanvas-header {
-    justify-content: center;
     position: relative;
-    padding: 4px;
+    margin: 0;
+    padding: 0;
+    height: 70px;
 }
 
-.navbar-logo:hover {
+.navbar-logo {
+    position: absolute;
+    padding: 10px;
+    transform: translateY(-50%);
+}
+
+.nombre {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar-logo:hover, .nombre:hover {
     color: var(--smooth-yellow);
 }
-
-
 
 .offcanvas-body {
     background-color: var(--accent-blue);
     padding-left: 0;
     padding-right: 0;
-    margin: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 2vh;
     border-radius: var(--radio-borde);
     position: relative;
     display: flex;
@@ -120,7 +134,6 @@ p, .offcanvas-body, .card-header h2, .navbar-logo, .config, .btn-close {
     color:var(--accent-yellow);
     background-color: var(--main-bg);
     border-color: var(--accent-yellow);
-    border-left: none;
 }
 
 .foo {
@@ -134,6 +147,19 @@ footer {
     letter-spacing: 0.8px;
 }
 
-#footer-app-name, #footer-app-creator {
+#footer-app-name {
     color: #ffffff62;
+}
+
+#footer-app-creator {
+    text-decoration: none;
+    color: var(--accent-yellow);
+}
+
+#footer-app-creator:hover {
+    color: var(--smooth-yellow);
+    border-radius: var(--radio-borde);
+    border-color: var(--smooth-yellow);
+    border-style: solid;
+    border-width: 1px;
 }
